@@ -1,3 +1,3 @@
 #!/bin/bash
-vi 13-symbolic_link
+ln -s /bin/ls__ls__
 
