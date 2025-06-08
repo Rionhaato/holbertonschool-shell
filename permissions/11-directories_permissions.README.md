@@ -1,14 +1,22 @@
-11-directories_permissions
+# 11-directories_permissions
 
-This script finds all directories in the current working directory and adds **execute permission** for the **owner**, **group**, and **others**.
-Regular files are not affected.
+This script adds execute permission (`+x`) to all **subdirectories** in the current directory for the **owner**, **group**, and **others**.
 
----
+## Example
 
-## How it works
+Before running the script:
 
-It uses the `find` command to target only directories:
+drwx------ 2 julien julien 4096 ...
+drwx------ 2 julien julien 4096 ...
+-rw-rw-r-- 1 julien julien   23 ...
 
-```bash
-find . -type d -exec chmod a+x {} \;
+After running the script:
+
+drwx--x--x 2 julien julien 4096 ...
+drwx--x--x 2 julien julien 4096 ...
+-rw-rw-r-- 1 julien julien   23 ...
+
+
+Only directories are affected; regular files remain unchanged.
+
 ~                                    

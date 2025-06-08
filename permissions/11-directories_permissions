@@ -1,3 +1,6 @@
 #!/bin/bash
-find . -type d -exec chmod a+x {} \;
+# Adds execute permission to all subdirectories in the current directory
 
+for entry in *; do
+  [ -d "$entry" ] && chmod a+x "$entry"
+done
