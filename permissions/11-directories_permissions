@@ -1,6 +1,5 @@
 #!/bin/bash
-# Adds execute permission to all subdirectories in the current directory
+# Add execute permission to all subdirectories, including hidden ones
 
-for entry in *; do
-  [ -d "$entry" ] && chmod a+x "$entry"
-done
+find . -type d -exec chmod a+x {} +
+
