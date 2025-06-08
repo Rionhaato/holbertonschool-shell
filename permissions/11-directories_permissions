@@ -1,9 +1,7 @@
 #!/bin/bash
-# Adds execute permission to directories (non-hidden, current level only)
+# Adds execute permission to all subdirectories in the current directory
 
-for item in *; do
-  if [ -d "$item" ]; then
-    chmod ugo+x "$item"
-  fi
+for entry in *; do
+  [ -d "$entry" ] && chmod a+X "$entry"
 done
 

@@ -1,22 +1,11 @@
 # 11-directories_permissions
 
-This script adds execute permission (`+x`) to all **subdirectories** in the current directory for the **owner**, **group**, and **others**.
+This script adds execute permission to all subdirectories of the current directory.
 
-## Example
+- It loops through each item in the current directory.
+- It uses `[ -d "$entry" ]` to check if the item is a directory.
+- `chmod a+X` is used to add execute permission only to directories (and not files).
+- Regular files are not affected.
 
-Before running the script:
+This ensures directories are accessible (can be entered with `cd`) without changing files unintentionally.
 
-drwx------ 2 julien julien 4096 ...
-drwx------ 2 julien julien 4096 ...
--rw-rw-r-- 1 julien julien   23 ...
-
-After running the script:
-
-drwx--x--x 2 julien julien 4096 ...
-drwx--x--x 2 julien julien 4096 ...
--rw-rw-r-- 1 julien julien   23 ...
-
-
-Only directories are affected; regular files remain unchanged.
-
-~                                    
