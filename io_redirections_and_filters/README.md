@@ -8,3 +8,7 @@ Prints "Hello World" followed by a new line to the standard output using the `ec
 ##Task 4 - Last lines
 
 This script displays the last 10 lines of the `/etc/passwd` file using the `tail` command.
+
+## Task 5 - I'd prefer the first ones
+
+This script displays the first 10 lines of the `/etc/passwd` file using the `head` command.
