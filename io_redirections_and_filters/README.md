@@ -17,3 +17,6 @@ This script displays the first 10 lines of the `/etc/passwd` file using the `hea
 
 This script displays the third line of the `/etc/passwd` file by piping `head` into `tail`.
 
+## Task 8 - Save current state of directory
+
+This script saves the output of `ls -la` into `ls_cwd_content`, creating or overwriting the file.
