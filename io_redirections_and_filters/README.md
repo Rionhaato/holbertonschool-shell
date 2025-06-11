@@ -28,3 +28,11 @@ This script prints all lines from `/etc/passwd` that contain the word "root":
 
 ```bash
 grep root /etc/passwd
+
+## Task 16 - What's next?
+
+This script prints every line in `/etc/passwd` containing the word "root" **and** the 3 lines that follow it using:
+
+```bash
+grep -A 3 root /etc/passwd
+
