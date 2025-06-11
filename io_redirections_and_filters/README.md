@@ -1,3 +1,4 @@
+
 # I/O Redirection and Filters
 
 This directory contains scripts related to shell I/O redirection and special characters
@@ -20,3 +21,10 @@ This script displays the third line of the `/etc/passwd` file by piping `head` i
 ## Task 8 - Save current state of directory
 
 This script saves the output of `ls -la` into `ls_cwd_content`, creating or overwriting the file.
+
+## Task 14 - It must be in that file
+
+This script prints all lines from `/etc/passwd` that contain the word "root":
+
+```bash
+grep root /etc/passwd
